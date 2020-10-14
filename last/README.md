@@ -1,4 +1,4 @@
-### Code Challenge: first
+### Code Challenge: last
 
 One of the fundamental cornerstones of any programming language is having
 a firm grasp on arrays and how to manipulate them. This challenge
