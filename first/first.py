@@ -3,9 +3,9 @@ cars = ["Ford", "Volvo", "BMW", "Mercedes", "Toyota", "Chevrolet"]
 
 
 def first(array, n):
-    # declaring "n" as the first element in the array "cars"
+    # x will call the position "n"
     x = cars[n]
-    # returning the value of "n"
+    # print the value of the variable "x"
     print(x)
 
 
