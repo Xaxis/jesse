@@ -1,12 +1,15 @@
 # defining the variable "cars" as an array
 cars = ["Ford", "Volvo", "BMW", "Mercedes", "Toyota", "Chevrolet"]
-
 #comment
-def first(array, n):
-    # x will call the position "n"
-    x = cars[n]
-    # print the value of the variable "x"
-    print(x)
+def first(arr, n=0):
+    if n is first.__defaults__[0]:
+        return arr[n]
+    else:
+        return arr[0:n]
 
 
-first(cars, 0)
+print(first(cars))
+print(first(cars,2))
+
+if first(cars) == "Ford":
+    print("Yep")
