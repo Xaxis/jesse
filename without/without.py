@@ -1,8 +1,8 @@
 nums = [1, 2, 1, 0, 3, 1, 4]
-# the function 'without' wont allow for multiple arugments
+# fixed the function to work with muliple values and renamed the `diff` variable
 def without(arr1, arr2=[]):
-    diff = list(set(arr1) - set(arr2))
-    return diff
+    subtract = list(set(arr1) - set(arr2))
+    return subtract
 
-#print(without(nums))
+# prints the subtract value
 print(without(nums, [1,2,3]))
