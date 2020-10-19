@@ -22,7 +22,7 @@
 
 def union(*foo):
     for i in enumerate(foo):
-        print(i)
+        print(i)pu
     return
 
 print(union([1, 2, 3], [101, 2, 1, 10], [2, 1]))
