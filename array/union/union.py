@@ -20,9 +20,11 @@
 
 # for loop to iterate over the tuple
 
-def union(*foo):
-    for i in enumerate(foo):
-        print(i)pu
+def union(arg, *foo):
+    arg1 = set(arg)
+    print(type(arg1))
+    print(type(foo))
+    newlist = ar1 - set(foo[for i in foo])
     return
 
-print(union([1, 2, 3], [101, 2, 1, 10], [2, 1]))
+print(union((1, 2, 3), (101, 2, 1, 10), (2, 1)))
