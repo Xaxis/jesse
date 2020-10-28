@@ -1,30 +1,19 @@
-# def union(arr, *manyarrs):
-#     print(arr)
-#     print(manyarrs)
-#     return
-#
-# union([1, 2, 3], [101, 2, 1, 10], [2, 1],['1','2'])
 
-#test
+def union(arg1, *arg2):
+    '''
+    Checks to see if a value is already in the first [array]
+    given. If the value is not in the [array] it appends that
+    that value at the end of the first [array].
+    '''
+    unionList = arg1
+    for i in arg2:
+        # 'i' should be each array given in arg2
+        for number in i:
+            # 'number' should be each value inside of each array given in arg2
+            if number not in unionList:
+            # if the number is not already in the unionList then is should add that number at the end of the list
+                unionList.append(number)
+    return unionList
 
-# def union(*manyarrs):
-#     # print(len(manyarrs))
-#     # print(type(manyarrs))
-#     one = set(manyarrs[0])
-#     two = set(manyarrs[1])
-#     three = set(manyarrs[2])
-#     unique_items = list((one ^ two) ^ (three))
-#     return unique_items
-#
-# print(union([1, 2, 3], [101, 2, 1, 10], [2, 1]))
 
-# for loop to iterate over the tuple
-
-def union(arg, *foo):
-    arg1 = set(arg)
-    print(type(arg1))
-    print(type(foo))
-    newlist = ar1 - set(foo[for i in foo])
-    return
-
-print(union((1, 2, 3), (101, 2, 1, 10), (2, 1)))
+print(union([1, 2, 3], [101, 2, 1, 10], [2, 1]))
